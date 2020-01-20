@@ -16,19 +16,16 @@ function App() {
     console.log("This is second", sideDrawerOpen);
   };
 
-  let sideDrawer;
   let backdrop;
 
   if (sideDrawerOpen) {
-    sideDrawer = <SideDrawer />;
     backdrop = <Backdrop click={backdropClickHandler} />;
   }
 
   return (
     <div style={{ height: "100%" }}>
       <Navbar drawerClickHandler={drawerToggleClickHandler} />
-      {sideDrawer}
-      {backdrop}
+      <SideDrawer show={sideDrawerOpen} />;{backdrop}
       <main style={{ marginTop: 64 }}>
         <p>This is the page paragraph</p>
       </main>
