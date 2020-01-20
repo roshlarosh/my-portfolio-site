@@ -2,12 +2,12 @@ import React from "react";
 import "./Navbar.css";
 import HamburgerToggleButton from "../SideDrawer/HamburgerToggleButton";
 
-const Navbar = () => {
+const Navbar = props => {
   return (
     <header className="navbar">
       <nav className="navbar-navigation">
-        <div>
-          <HamburgerToggleButton />
+        <div className="navbar-toggle-button">
+          <HamburgerToggleButton click={props.drawerClickHandler} />
         </div>
         <div className="navbar-logo">
           <a href="/" alt={"Logo"}>

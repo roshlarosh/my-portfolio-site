@@ -1,9 +1,9 @@
 import React from "react";
 import "./HamburgerToggleButton.css";
 
-const HamburgerToggleButton = () => {
+const HamburgerToggleButton = props => {
   return (
-    <button className="toggle-button">
+    <button className="toggle-button" onClick={props.click}>
       <span className="toggle-button-line" />
       <span className="toggle-button-line" />
       <span className="toggle-button-line" />
