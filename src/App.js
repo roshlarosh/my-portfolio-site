@@ -1,10 +1,13 @@
 import React from "react";
-import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Navbar />
+      <main style={{ marginTop: 64 }}>
+        <p>This is the page paragraph</p>
+      </main>
     </div>
   );
 }
