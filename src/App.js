@@ -4,10 +4,16 @@ import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 
 function App() {
-  const [sideDrawerOpen, setSideDrawOpen] = React.useState(false);
+  const [sideDrawerOpen, setSideDrawerOpen] = React.useState(false);
 
   const drawerToggleClickHandler = () => {
-    setSideDrawOpen(sideDrawerOpen + true);
+    setSideDrawerOpen(sideDrawerOpen + true);
+    console.log("This is first", sideDrawerOpen);
+  };
+
+  const backdropClickHandler = () => {
+    setSideDrawerOpen(!sideDrawerOpen);
+    console.log("This is second", sideDrawerOpen);
   };
 
   let sideDrawer;
@@ -15,7 +21,7 @@ function App() {
 
   if (sideDrawerOpen) {
     sideDrawer = <SideDrawer />;
-    backdrop = <Backdrop />;
+    backdrop = <Backdrop click={backdropClickHandler} />;
   }
 
   return (
