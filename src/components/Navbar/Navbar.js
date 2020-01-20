@@ -1,11 +1,14 @@
 import React from "react";
 import "./Navbar.css";
+import HamburgerToggleButton from "../SideDrawer/HamburgerToggleButton";
 
 const Navbar = () => {
   return (
     <header className="navbar">
       <nav className="navbar-navigation">
-        <div></div>
+        <div>
+          <HamburgerToggleButton />
+        </div>
         <div className="navbar-logo">
           <a href="/" alt={"Logo"}>
             roshlarosh.

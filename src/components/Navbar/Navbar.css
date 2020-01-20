@@ -14,6 +14,10 @@
   padding: 0 1rem;
 }
 
+.navbar-logo {
+  margin-left: 1rem;
+}
+
 .navbar-logo a {
   color: white;
   text-decoration: none;
