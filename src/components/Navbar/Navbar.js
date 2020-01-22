@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import HamburgerToggleButton from "../SideDrawer/HamburgerToggleButton";
+import { Link } from "react-router-dom";
 
 const Navbar = props => {
   return (
@@ -10,21 +11,21 @@ const Navbar = props => {
           <HamburgerToggleButton click={props.drawerClickHandler} />
         </div>
         <div className="navbar-logo">
-          <a href="/" alt={"Logo"}>
+          <Link to="/" alt={"Logo"}>
             roshlarosh.
-          </a>
+          </Link>
         </div>
         <div className="spacer" />
         <div className="navbar-navigation-items">
           <ul>
             <li>
-              <a href="/"> Projects</a>
+              <Link to="/projects"> Projects</Link>
             </li>
             <li>
-              <a href="/"> About</a>
+              <Link to="/about"> About</Link>
             </li>
             <li>
-              <a href="/"> Contact</a>
+              <Link to="/contact"> Contact</Link>
             </li>
           </ul>
         </div>
