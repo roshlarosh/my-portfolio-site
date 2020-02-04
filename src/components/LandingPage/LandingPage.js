@@ -22,7 +22,7 @@ const LandingPage = () => {
   return (
     <div className="landingPage">
       <animated.h1 style={propsGreeting} className="greeting">
-        Hi, I'm roshlarosh
+        Hi, I am roshan
       </animated.h1>
     </div>
   );
