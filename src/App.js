@@ -7,8 +7,8 @@ import ProjectPage from "./components/ProjectPage/ProjectPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import AboutPage from "./components/AboutPage/AboutPage";
-import "./App.css";
 import { Route, Switch } from "react-router-dom";
+// import "./App.css";
 
 function App() {
   const [sideDrawerOpen, setSideDrawerOpen] = React.useState(false);
@@ -30,7 +30,7 @@ function App() {
   }
 
   return (
-    <main style={{ height: "100%" }} className="mainPage">
+    <main className="mainPage">
       <Switch>
         <Route path="/" component={LandingPage} exact />
         <Route path="/projects" component={ProjectPage} />

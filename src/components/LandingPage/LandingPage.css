@@ -1,5 +1,15 @@
-/* .landingPage {
-  background-color: aqua;
-  height: 100%;
-  width: 100%;
-} */
+.landingPage {
+  height: 60vh;
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.greeting {
+  line-height: 1.5;
+  text-align: center;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.95);
+}

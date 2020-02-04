@@ -19,13 +19,22 @@ const Navbar = props => {
         <div className="navbar-navigation-items">
           <ul>
             <li>
-              <Link to="/projects"> Projects</Link>
+              <Link to="/projects" activeStyle={{ color: "red" }}>
+                {" "}
+                Projects
+              </Link>
             </li>
             <li>
-              <Link to="/about"> About</Link>
+              <Link to="/about" activeStyle={{ color: "red" }}>
+                {" "}
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/contact"> Contact</Link>
+              <Link to="/contact" activeStyle={{ color: "red" }}>
+                {" "}
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
