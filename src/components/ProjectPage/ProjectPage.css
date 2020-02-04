@@ -1,6 +1,19 @@
+.headline {
+  margin-top: 20%;
+  text-align: center;
+  color: #333333;
+}
+
+.underline {
+  color: #333333;
+  background-color: #333333;
+  width: 50px;
+}
+
 .container-animation {
   position: relative;
-  width: 50%;
+  width: 80%;
+  margin-top: 10%;
 }
 
 img {
@@ -19,18 +32,30 @@ img {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #008cba;
+  background-color: #333333;
 }
 
 .container-animation:hover .overlay {
-  opacity: 1;
+  opacity: 0.9;
 }
 
-.title .description {
-  color: white;
+.title {
+  color: rgba(255, 255, 255, 0.95);
   font-size: 20px;
   position: absolute;
-  top: 50%;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 12px;
+  position: absolute;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
