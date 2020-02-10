@@ -25,11 +25,11 @@ const ContactPage = () => {
 
   const { Name, Email, Message } = state;
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    // postAddServiceData(state);
-    // setChangePage(!changePage);
-  };
+  // const handleSubmit = event => {
+  //   event.preventDefault();
+  //   // postAddServiceData(state);
+  //   // setChangePage(!changePage);
+  // };
 
   return (
     <div className="form-container">
