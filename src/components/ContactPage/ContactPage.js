@@ -33,7 +33,11 @@ const ContactPage = () => {
 
   return (
     <div className="form-container">
-      <form noValidate onSubmit={handleSubmit} className="form">
+      <form
+        action="https://formspree.io/xlebobod"
+        method="POST"
+        className="form"
+      >
         <h1 className="headline">Contact me</h1>
         <hr className="underline" />
         <fieldset className="fieldset">
