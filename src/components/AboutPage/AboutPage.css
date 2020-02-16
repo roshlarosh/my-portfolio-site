@@ -1,0 +1,20 @@
+.bio {
+  margin: 3%;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.subHeadline {
+  margin-top: 10%;
+  text-align: center;
+  color: #2f2822;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.list li {
+  font-size: 20px;
+}

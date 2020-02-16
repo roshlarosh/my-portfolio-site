@@ -1,15 +1,30 @@
 .landingPage {
   height: 60vh;
   margin-top: 56px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 100%;
 }
 
 .greeting {
   line-height: 1.5;
   text-align: center;
-  font-size: 60px;
-  color: rgba(255, 255, 255, 0.95);
+  /* font-size: 60px; */
+  /* color: rgba(255, 255, 255, 0.95); */
+  color: #2f2822;
+  margin-top: 200px;
+}
+
+.intro {
+  line-height: 1.5;
+  text-align: center;
+  /* color: rgba(255, 255, 255, 0.95); */
+  color: #2f2822;
+}
+
+.contact {
+  line-height: 1.5;
+  text-align: center;
+  /* color: rgba(255, 255, 255, 0.95); */
+  color: #2f2822;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
 }

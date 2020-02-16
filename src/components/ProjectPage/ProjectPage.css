@@ -1,12 +1,12 @@
 .headline {
   margin-top: 20%;
   text-align: center;
-  color: #333333;
+  color: #2f2822;
 }
 
 .underline {
-  color: #333333;
-  background-color: #333333;
+  color: #2f2822;
+  background-color: #2f2822;
   width: 50px;
 }
 
@@ -35,7 +35,7 @@ img {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #333333;
+  background-color: #2f2822;
 }
 
 .container-animation:hover .overlay {

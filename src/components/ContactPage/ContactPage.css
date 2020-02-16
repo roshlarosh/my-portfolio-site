@@ -1,13 +1,6 @@
-.form-container {
-  margin: 10%;
-}
-/* 
-.fieldset {
-} */
-
 .underline {
-  color: #333333;
-  background-color: #333333;
+  color: #2f2822;
+  background-color: #2f2822;
   width: 50px;
   margin-bottom: 10%;
 }
@@ -18,7 +11,6 @@
 
 #messageBox {
   padding: 0 0 50px 0;
-  /* overflow-wrap: break-word; */
 }
 
 .submit-button {
@@ -27,4 +19,7 @@
   -webkit-box-shadow: 3px 3px 1.5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 1.5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 3px 1.5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.bio {
 }

@@ -32,62 +32,64 @@ const ContactPage = () => {
   // };
 
   return (
-    <div className="form-container">
-      <form
-        action="https://formspree.io/xlebobod"
-        method="POST"
-        className="form"
-      >
-        <h1 className="headline">Contact me</h1>
-        <hr className="underline" />
-        <fieldset className="fieldset">
-          <div>
-            <label htmlFor="Name">Name:</label>
+    <div>
+      <div className="form-container">
+        <form
+          action="https://formspree.io/xlebobod"
+          method="POST"
+          className="form"
+        >
+          <h1 className="headline">Contact me</h1>
+          <hr className="underline" />
+          <fieldset className="fieldset">
+            <div>
+              <label htmlFor="Name">Name:</label>
+              <br />
+              <input
+                type="text"
+                name="Name"
+                className="input-field"
+                id="Name"
+                value={Name}
+                onChange={onChange}
+                required
+              />
+            </div>
             <br />
-            <input
-              type="text"
-              name="Name"
-              className="input-field"
-              id="Name"
-              value={Name}
-              onChange={onChange}
-              required
-            />
-          </div>
-          <br />
-          <div>
-            <label htmlFor="Email">Email:</label>
+            <div>
+              <label htmlFor="Email">Email:</label>
+              <br />
+              <input
+                type="Email"
+                name="Email"
+                id=""
+                className="input-field"
+                value={Email}
+                onChange={onChange}
+                required
+              />
+            </div>
             <br />
-            <input
-              type="Email"
-              name="Email"
-              id=""
-              className="input-field"
-              value={Email}
-              onChange={onChange}
-              required
-            />
-          </div>
-          <br />
-          <div>
-            <label htmlFor="Message">Message:</label>
+            <div>
+              <label htmlFor="Message">Message:</label>
+              <br />
+              <textarea
+                type="text"
+                name="Message"
+                id="messageBox"
+                wra="soft"
+                className="input-field"
+                value={Message}
+                onChange={onChange}
+              />
+            </div>
             <br />
-            <textarea
-              type="text"
-              name="Message"
-              id="messageBox"
-              wra="soft"
-              className="input-field"
-              value={Message}
-              onChange={onChange}
-            />
-          </div>
-          <br />
-          <button type="submit" className="submit-button">
-            Send
-          </button>
-        </fieldset>
-      </form>
+            <button type="submit" className="submit-button">
+              Send
+            </button>
+          </fieldset>
+        </form>
+      </div>
     </div>
   );
 };

@@ -1,15 +1,26 @@
 import React from "react";
 import "./ProjectPage.css";
 import RecyclingGame from "./images/recycling-game.png";
-import Temporal from "./images/temporal.png";
 import Gifsthesia from "./images/gifsthesia.png";
 import Squall from "./images/squall.png";
+import Joy from "./images/joy.png";
 
 const ProjectPage = () => {
   return (
     <section className="projectGallery">
       <h2 className="headline"> Projects</h2>
       <hr className="underline" />
+      <figure className="container-animation">
+        <img src={Joy} alt={"joy project"} />
+        <figcaption className="overlay">
+          <h2 className="title">Joy</h2>
+          <p className="description">
+            Efficacy tool to capture loneliness before and after being
+            prescribes comminity services.
+          </p>
+        </figcaption>
+        <a href={"https://github.com/fac18/joy"} target="_blank"></a>
+      </figure>
       <figure className="container-animation">
         <img src={RecyclingGame} alt={"recycling game project"} />
         <figcaption className="overlay">
@@ -20,16 +31,6 @@ const ProjectPage = () => {
           </p>
         </figcaption>
         <a href={"https://github.com/fac18/recycling-game"} target="_blank"></a>
-      </figure>
-      <figure className="container-animation">
-        <img src={Temporal} alt={"temporal project"} />
-        <figcaption className="overlay">
-          <h2 className="title">Temporal</h2>
-          <p className="description">
-            A react typscript project to present temporal
-          </p>
-        </figcaption>
-        <a href={"https://github.com/roshlarosh/temporal"} target="_blank"></a>
       </figure>
       <figure className="container-animation">
         <img src={Squall} alt={"squall project"} />
