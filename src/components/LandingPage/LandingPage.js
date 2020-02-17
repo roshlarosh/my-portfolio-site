@@ -1,22 +1,17 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 import "./LandingPage.css";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
-  // const propsGreeting = useSpring({
-  //   opacity: 1,
-  //   delay: 370,
-  //   from: { opacity: 0 }
-  // });
-  // const propsName = useSpring({
-  //   opacity: 1,
-  //   delay: 650,
-  //   marginTop: 20,
-  //   from: { opacity: 0, marginTop: -500 }
-  // });
   const propsIntro = useSpring({
     opacity: 1,
     delay: 1000,
+    from: { opacity: 0 }
+  });
+  const propsText = useSpring({
+    opacity: 1,
+    delay: 2100,
     from: { opacity: 0 }
   });
   return (
@@ -26,9 +21,11 @@ const LandingPage = () => {
         <animated.h3 style={propsIntro} className="intro">
           I am a full-stack developer based in London
         </animated.h3>
-        <animated.h4 style={propsIntro} className="contact">
-          Contact me
-        </animated.h4>
+        <Link to="/projects">
+          <animated.h4 style={propsText} className="contact">
+            Checkout some projects I've worked on
+          </animated.h4>
+        </Link>
       </p>
     </div>
   );

@@ -13,7 +13,7 @@
 .container-animation {
   position: relative;
   width: 80%;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,4 +74,25 @@ img {
   position: absolute;
   z-index: 1;
   flex-basis: 25%;
+}
+
+@media (min-width: 600px) {
+  .container-animation {
+    width: 500px;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap-reverse; */
+    justify-content: center;
+  }
+
+  .headline {
+    margin-top: 10%;
+    font-size: 30px;
+  }
+  .underline {
+    margin-bottom: 2px;
+  }
 }

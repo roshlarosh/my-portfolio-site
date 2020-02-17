@@ -30,12 +30,6 @@ const Navbar = props => {
                 About
               </Link>
             </li>
-            <li>
-              <Link to="/contact" activeStyle={{ color: "red" }}>
-                {" "}
-                Contact
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>
