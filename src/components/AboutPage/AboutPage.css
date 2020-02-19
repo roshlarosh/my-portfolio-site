@@ -1,7 +1,25 @@
+.headline-about {
+  margin-top: 8%;
+  text-align: center;
+  color: #2f2822;
+  font-size: 50px;
+}
+
 .bio {
   margin: 3%;
+  margin-top: 0;
   font-size: 20px;
   line-height: 1.5;
+  width: 400px;
+}
+
+.form-container {
+  width: 50%;
+}
+
+.fieldset {
+  border: none;
+  width: 400px;
 }
 
 .subHeadline {
@@ -23,7 +41,7 @@
   color: #2f2822;
   background-color: #2f2822;
   width: 50px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .input-field {
@@ -34,22 +52,35 @@
   padding: 0 0 50px 0;
 }
 
-.submit-button {
-  background-color: rgba(255, 255, 255, 0.95);
-  text-transform: uppercase;
-  -webkit-box-shadow: 3px 3px 1.5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 3px 1.5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 3px 3px 1.5px 0px rgba(0, 0, 0, 0.75);
+.bio-form {
+  display: flex;
+  justify-content: center;
+}
+
+/* .form {
+  width: 400px;
+} */
+
+.form-container {
+  margin-left: 60px;
+}
+
+@media (max-device-width: 767px) {
+  .bio-form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+  }
 }
 
 @media (min-width: 600px) {
-  .headline {
+  .headline-about {
     margin-top: 10%;
     font-size: 30px;
   }
 
-  .form-container {
+  /* .form-container {
     width: 800px;
     margin-left: 22%;
-  }
+  } */
 }
