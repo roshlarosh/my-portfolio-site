@@ -4,11 +4,38 @@ import RecyclingGame from "./images/recycling-game.png";
 import Gifsthesia from "./images/gifsthesia.png";
 import Squall from "./images/squall.png";
 import Joy from "./images/joy.png";
+import { makeStyles } from "@material-ui/core/styles";
+import htmlIcon from "./images/html.png";
+import cssIcon from "./images/css.png";
+import nodeExpressIcon from "./images/expressjs.jpg";
+import gitIcon from "./images/git.png";
+import herokuIcon from "./images/heroku.png";
+import jsIcon from "./images/js.png";
+import postgresqlIcon from "./images/postgresql.png";
+import reactIcon from "./images/react.png";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  Typography,
+  CardMedia
+} from "@material-ui/core";
+
+const useStyles = makeStyles({
+  stackCard: {
+    marginTop: "100px",
+    marginBottom: "100px",
+    marginLeft: "10rem",
+    width: "70rem",
+    height: "160px"
+  }
+});
 
 const ProjectPage = () => {
+  const classes = useStyles();
   return (
     <section className="projectGallery">
-      <h2 className="headline"> Projects</h2>
+      <h2 className="projects-title"> Projects</h2>
       <hr className="underline" />
       <div className="project-container">
         <figure className="container-animation">
@@ -16,19 +43,24 @@ const ProjectPage = () => {
           <figcaption className="overlay">
             <h2 className="title">Joy</h2>
             <p className="description">
-              Efficacy tool to capture loneliness before and after being
-              prescribes comminity services.
+              Design and build an efficacy tool based on UCLA loneliness scale
+              to capture data about people's wellbeing before and after "social
+              prescribing".
             </p>
           </figcaption>
           <a href={"https://github.com/fac18/joy"} target="_blank"></a>
         </figure>
         <figure className="container-animation">
-          <img src={RecyclingGame} alt={"recycling game project"} />
+          <img
+            src={RecyclingGame}
+            alt={"recycling game project"}
+            className="recycling"
+          />
           <figcaption className="overlay">
             <h2 className="title">Reduce, reuse, recycle</h2>
             <p className="description">
-              A game for young people bwtwen the age of 4-6 years old to teach
-              them about recycling
+              Build an app that teaches kids how to recycle through an
+              Interactive and educational drag and drop game.
             </p>
           </figcaption>
           <a
@@ -66,6 +98,17 @@ const ProjectPage = () => {
             target="_blank"
           ></a>
         </figure>
+      </div>
+      <h3 className="stack-title">Tech Stack</h3>
+      <div className="stackCard">
+        <img src={htmlIcon} alt="htmlicon" className="" />
+        <img src={cssIcon} alt="htmlicon" className="" />
+        <img src={gitIcon} alt="htmlicon" className="" />
+        <img src={herokuIcon} alt="htmlicon" className="" />
+        <img src={postgresqlIcon} alt="htmlicon" className="" />
+        <img src={reactIcon} alt="htmlicon" className="" />
+        <img src={nodeExpressIcon} alt="htmlicon" className="" />
+        <img src={jsIcon} alt="htmlicon" className="" />
       </div>
     </section>
   );

@@ -1,7 +1,8 @@
-.headline {
-  margin-top: 20%;
+.projects-title {
+  margin-top: 8%;
   text-align: center;
   color: #2f2822;
+  font-size: 50px;
 }
 
 .underline {
@@ -13,15 +14,19 @@
 .container-animation {
   position: relative;
   width: 80%;
-  /* margin-top: 10%; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.project-container {
+  display: flex;
+  flex-direction: row;
+}
+
 img {
   display: block;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -29,10 +34,10 @@ img {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 10%;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: 80%;
   opacity: 0;
   transition: 0.5s ease;
   background-color: #2f2822;
@@ -44,7 +49,7 @@ img {
 
 .title {
   color: rgba(255, 255, 255, 0.95);
-  font-size: 20px;
+  font-size: 25px;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -56,7 +61,7 @@ img {
 
 .description {
   color: rgba(255, 255, 255, 0.95);
-  font-size: 12px;
+  font-size: 17px;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -76,23 +81,69 @@ img {
   flex-basis: 25%;
 }
 
-@media (min-width: 600px) {
+.recycling {
+  height: 100%;
+}
+
+.stackCard {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* background-color: #f5f5ef; */
+}
+
+.stackCard img {
+  width: 7vh;
+  height: auto;
+  margin-left: 40px;
+}
+
+.stack-title {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+
+@media (max-device-width: 414px) {
   .container-animation {
-    width: 500px;
+    width: 300px;
   }
 
-  .project-container {
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap-reverse; */
-    justify-content: center;
-  }
-
-  .headline {
-    margin-top: 10%;
+  .projects-title {
+    margin-top: 23%;
     font-size: 30px;
   }
   .underline {
     margin-bottom: 2px;
+  }
+
+  .recycling {
+    height: 100%;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-device-width: 768px) {
+  .projects-title {
+    margin-top: 15%;
+    font-size: 40px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 15px;
   }
 }
