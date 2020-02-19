@@ -8,6 +8,7 @@ import ErrorPage from "./components/ErrorPage/ErrorPage";
 import AboutPage from "./components/AboutPage/AboutPage";
 import { Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
+
 // import "./App.css";
 
 function App() {
