@@ -44,11 +44,10 @@ const AboutPage = () => {
         <p className="bio">
           I am a <b>software developer</b> at Founders & Coders with a
           background in software testing. I enjoy writing{" "}
-          <b>clean, concise code</b>, and <b>building intuitive UI</b>. I am
-          looking for a front-end/full-stack role in a fast-paced
-          forward-thinking company with a <b>supportive culture</b> that values
-          <b>diversity</b>, where I can <b>learn</b> and grow to be the best web
-          software developer I can be.
+          <b>clean, concise code</b>, and <b>building intuitive UI</b>. I work
+          best in a fast-paced forward-thinking company with a{" "}
+          <b>supportive culture</b> that values <b>diversity</b>, where I can{" "}
+          <b>learn</b> and grow to be the best web software developer I can be.
         </p>
         <div className="form-container">
           <form
@@ -59,6 +58,7 @@ const AboutPage = () => {
             {/* <h1 className="headline">Contact me</h1>
             <hr className="underline" /> */}
             <fieldset className="fieldset">
+              <legend>Get in touch</legend>
               <div>
                 <label htmlFor="Name">Name:</label>
                 <br />
